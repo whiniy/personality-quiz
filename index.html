@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Personality Quiz Starter Code</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- import the webpage's stylesheet -->
+	<link rel="stylesheet" href="/style.css">
+
+	<!-- import the webpage's javascript file -->
+	<script src="/script.js" defer>
+
+	</script>
+</head>
+
+<body>
+	<header>
+		<h1>Pick your three meals of the day and we’ll tell you if you’re team Damon or team Stefan from TVD!</h1>
+		<p>Choose one answer per question to get your result!</p>
+	</header>
+
+	<main>
+
+		<h2>What are you having for breakfast?</h2>
+		<div class="question">
+
+			<div class="answer-choice">
+				<img id = "wafflePic" src="assets/waffle!!!.jpg" alt="A piece of waffle is topped with syrup and berries.">
+        <br>
+        <button onclick="deactivateq1a1()" id="q1a1">Buttermilk waffles with fruit</button>
+      </div>
+
+      <div class="answer-choice">
+        <img id="avoPic" src="assets/avocado toast!!!.jpg" alt="Four pieces of avocado toast are displayed. Each has a different design made with the slices of avocado.">
+        <br>
+        <button onclick="deactivateq1a2()"id="q1a2">Avocado toast</button>
+      </div>
+
+    </div>  
+    
+    <h2>What are you having for lunch?</h2>
+    <div class="question">
+			<div class="answer-choice">
+        <img id="saladPic" src="assets/salad!!!.jpg" alt="Iceberg lettuce is displayed on a plate with grilled chicken, red onions, and cherry tomatoes.">
+        <br>
+        <button onclick="deactivateq2a1()"id="q2a1">Chicken salad</button>
+      </div>
+<div class="answer-choice">
+        <img id="burgerPic" src="assets/burger!!!.jpg" alt="Angus beef is set atop a brioche bun with lettuce, tomatoes, and cheese. There is a side of fries.">
+        <br>
+        <button onclick="deactivateq2a2()"id="q2a2">Burger and fries</button>
+      </div>
+    </div> 
+    
+    <h2>What are you having for dinner?</h2>
+    <div class="question">
+
+      <div class="answer-choice">
+        <img id="steakPic" src="assets/steak!!.jpg" alt=" A big slab of steak is plated with a side of fries.">
+        <br>
+        <button onclick="deactivateq3a1()"id="q3a1">Steak with a side of fries</button>
+      </div>
+
+      <div class="answer-choice">
+        <img id="pastaPic" src="assets/pasta!!!.jpg" alt="Bowtie pasta in pesto sauce is set atop a bed of lettuce and is topped with sliced cherry tomatoes.">
+        <br>
+        <button onclick="deactivateq3a2()"id="q3a2">Pesto bowtie pasta</button>
+      </div>
+
+    </div> 
+    
+    <h2 id="result">Your result is...</h2>
+
+
+		<div style="text-align: center;">
+		<button onclick="scrollAndRestart()" id="restart">Restart</button> 
+		</div>
+    
+  </main>
+  </body>
+</html>
